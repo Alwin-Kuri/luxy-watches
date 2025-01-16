@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Group Coursework</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .blog-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .blog-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .blog-section:nth-child(even) .blog-image {
+            float: right;
+            margin-left: 20px;
+        }
+
+        .blog-section:nth-child(odd) .blog-image {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .divider {
+            height: 3px;
+            background: linear-gradient(to right, #c8a165, #000);
+            margin: 40px 0;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-image {
+                float: none;
+                margin: 0 0 20px 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/images/logo.png" alt="Luxy Nepal Logo" class="navbar-logo">
+                </a>    
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="collections.html">Collections</a>
+                        <ul class="dropdown-menu" style="background-color: #333;">
+                            <li><a href="men.html">Men's Watches</a></li>
+                            <li><a href="women.html">Women's Watches</a></li>
+                            <li><a href="kids.html">Kids' Watches</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+                <!--A simple search bar-->
+                <div class="navItem">
+                    <div class="search">
+                        <input type="text" placeholder="Search..." class="searchInput">
+                        <img src="/images/search.png" width="20" height="20" alt="" class="searchIcon">
+                    </div>
+                </div>
+            </nav>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <div class="blog-container">
+
+        <!-- Topic 1 -->
+        <div class="blog-section clearfix">
+            <h2>Impact of Technology on the Watch Industry and Consumer Trends</h2>
+            <img src="/images/technology2.jpg" alt="Technology and Watches" class="blog-image">
+            <p>
+                The watch industry has been profoundly shaped by technological advancements, resulting in a seamless fusion 
+                of tradition and innovation. Historically, watches were mechanical marvels, showcasing craftsmanship and 
+                precision. Today, they have evolved into multifunctional devices that transcend the boundaries of mere 
+                timekeeping. Technology, particularly in the last few decades, has catalyzed this transformation.
+            </p>
+            <p>
+                The emergence of quartz movements revolutionized the market by providing affordability and accuracy. However, 
+                it was the advent of smartwatches that truly redefined the consumer experience. These devices not only tell 
+                time but also monitor health metrics, offer navigation assistance, and enable seamless connectivity with 
+                smartphones. This technological leap has captured the attention of younger audiences who prioritize 
+                functionality alongside aesthetics.
+            </p>
+            <p>
+                Consumer trends have also shifted toward personalization and sustainability. Watches are now equipped with 
+                AI-driven features that learn user preferences and adapt to their lifestyles. Additionally, eco-conscious 
+                buyers increasingly seek timepieces made from sustainable materials like recycled metals or biodegradable 
+                straps. This trend highlights a growing awareness of environmental impact, even in luxury markets.
+            </p>
+            <p>
+                As the watch industry continues to innovate, it remains committed to its heritage. High-end brands are 
+                incorporating traditional craftsmanship with cutting-edge technology, offering a unique blend of artistry 
+                and functionality. The result is a product that appeals to a broader audience while preserving the timeless 
+                allure of watches.
+            </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Topic 2 -->
+        <div class="blog-section clearfix">
+            <h2>Technological Advancements in Watch Design and Sales</h2>
+            <img src="/images/tech.jpg" alt="Watch Design Innovation" class="blog-image">
+            <p>
+                Technology has not only revolutionized the design of watches but has also transformed the way they are sold. 
+                In design, 3D printing and computer-aided design (CAD) software have enabled watchmakers to experiment with 
+                intricate structures and bold innovations. The ability to rapidly prototype new designs has significantly 
+                reduced development time, paving the way for more creative and innovative timepieces.
+            </p>
+            <p>
+                Additionally, smart materials have gained traction in the watch industry. Materials such as carbon composites 
+                and sapphire crystal are now used to create durable and lightweight designs. These materials enhance not only 
+                the aesthetic appeal but also the functionality of modern watches, making them more resistant to wear and tear.
+            </p>
+            <p>
+                On the sales side, e-commerce and digital innovation have opened new avenues for luxury watch brands. Augmented 
+                Reality (AR) technology allows customers to try on watches virtually, offering a realistic shopping experience 
+                from the comfort of their homes. Moreover, virtual boutiques provide a highly interactive way to explore product 
+                collections, bridging the gap between physical and digital retail.
+            </p>
+            <p>
+                Blockchain technology has also addressed a long-standing challenge in the watch industry—counterfeit products. 
+                By embedding blockchain-based chips into luxury watches, brands can provide consumers with a secure and 
+                transparent record of ownership and authenticity. This innovation builds trust and safeguards the legacy of 
+                premium watchmaking.
+            </p>
+            <p>
+                These advancements in design and sales have ensured that the watch industry remains relevant in an ever-changing 
+                technological landscape. By embracing innovation, watchmakers continue to captivate both seasoned collectors 
+                and new enthusiasts.
+            </p>
+        </div>
+    </div>
+    <!-- Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <img src="/images/logo.png" alt="Luxy Nepal Logo" class="footer-logo">
+                <div>
+                    <h4>About Us</h4>
+                    <p>
+                        You are accessing the world's <br>number one leading watch store.
+                    </p>
+                    <p>
+                        Hope you found the right fit <br>for your fabulous wrist.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="footer-section follow">
+                <h4>Connect with us</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/IslingtonCollege/"><img src="/images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/islingtoncollege/"><img src="/images/instagram.png" alt="Instagram"></a>
+                    <a href="https://x.com/islington1996"><img src="/images/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+    
+            <div class="footer-section explore">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Our Blog</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section support">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
